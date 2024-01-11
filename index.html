@@ -26,15 +26,53 @@
         </p>
       </section>
       <section class="form-container">
-        <button>
-          Try it free 7 days <span>then <br />$20/mo. thereafter</span>
-        </button>
-        <form>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
-          <button class="submit">Claim your free trial</button>
+        <button>Try it free 7 days <span>then $20/mo. thereafter</span></button>
+        <form id="login-form" action="#">
+          <div>
+            <input
+              type="text"
+              id="first-name"
+              value=""
+              name="First Name"
+              placeholder="First Name"
+            />
+            <span><img src="./assets/icon-error.svg" /></span>
+            <small class="first-name-error"></small>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="last-name"
+              value=""
+              name="Last Name"
+              placeholder="Last Name"
+            />
+            <span><img src="./assets/icon-error.svg" /></span>
+            <small class="last-name-error"></small>
+          </div>
+          <div>
+            <input
+              type="email"
+              value=""
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <span><img src="./assets/icon-error.svg" /></span>
+            <small class="email-error"></small>
+          </div>
+          <div>
+            <input
+              type="password"
+              id="password"
+              value=""
+              name="Password"
+              placeholder="Password"
+            />
+            <span><img src="./assets/icon-error.svg" /></span>
+            <small class="password-error"></small>
+          </div>
+          <button type="submit" class="submit">Claim your free trial</button>
           <p>
             By clicking the button, you are agreeing to our
             <a href="#">Terms and Services</a>
@@ -50,5 +88,6 @@
         >. Coded by <a href="https://github.com/mirfanwebdev">M.Irfan</a>.
       </p>
     </footer>
+    <script src="./js/login.js"></script>
   </body>
 </html>
