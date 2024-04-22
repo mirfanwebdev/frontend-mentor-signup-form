@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/assets/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  color: whitesmoke;
+  text-align: center;
+  margin: 5em 1.5em 4em;
+}
+.title h1 {
+  margin: 1em;
+}
+
+.form-container {
+  margin: 0 1.5em;
+}
+
+.form-container button {
+  background-color: hsl(248, 32%, 49%);
+  color: whitesmoke;
+  border: 0;
+  border-radius: 10px;
+  padding: 1em 5em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 1.25em;
+  box-shadow: 0 6px 0 hsla(249, 10%, 26%, 0.2);
+}
+
+.form-container span {
+  font-weight: 400;
+}
+
+.form-container form {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 0 6px 0 hsla(249, 10%, 26%, 0.2);
+}
+
+form div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+form span {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  z-index: 2;
+  display: none;
+}
+
+form input {
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+}
+
+form .submit {
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  box-shadow: none;
+  padding: 1em 0;
+}
+
+form p {
+  font-size: 0.75em;
+  color: hsl(249, 10%, 26%);
+  text-align: center;
+  padding: 0 1em;
+}
+
+form a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+small {
+  display: block;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 2em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 720px) {
+  main {
+    display: flex;
+    gap: 3em;
+    margin: 7.5em 15em;
+  }
+
+  .title {
+    text-align: start;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  .form-container {
+    width: 1000px;
+  }
+
+  .form-container form {
+    padding: 2em;
+  }
+
+  .form-container button {
+    padding: 1em 0;
+  }
+}
