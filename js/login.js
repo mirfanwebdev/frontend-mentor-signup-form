@@ -1,6 +1,10 @@
 function showError(input, message) {
   const msg = input.parentNode.querySelector(`small`);
-  msg.innerText = input.name + " " + message;
+  if (input.name == email) {
+    msg.innerText = message;
+  } else {
+    msg.innerText = input.name + " " + message;
+  }
   msg.style.color = "red";
 }
 
